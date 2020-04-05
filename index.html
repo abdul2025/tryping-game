@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Try to Type</title>
+	</head>
+	<body>
+		<div id="result-bar">
+			<h1 id="score">Scores: <span id="score-span"></span></h1>
+			<h1 id="sec">Seconds: <span id="sec-span"></span></h1>
+			<h1 id="ave">Ava: <span id="ave-span"></span></h1>
+			<button class="restart-btn">RestartGame</button>
+		</div>
+		<div class="start">
+			<div class="intro">
+				<h2>Intro</h2>
+				<p>#This is a simple keyboard sound effect game</p>
+				<p>#First set your timer in seconds</p>
+				<p>#Click start</p>
+				<p>#Try to type as many words as you can</p>
+				<p>#Words will be given Randomly in top of the display</p>
+				<p>#Timer will count down</p>
+				<p>#After timer ends, you will see your final scores</p>
+			</div>
+			<div class="btn-input">
+				<input
+					class="set-timer"
+					placeholder="set your timer in seconds"
+					type="number"
+					autofocus
+				/>
+				<button class="startGame">startGame</button>
+			</div>
+			<a
+				class="btn-githib"
+				href="https://git.generalassemb.ly/abdul2020/TRY_TO_TYPE-Game"
+				>GITHUB</a
+			>
+		</div>
+		<div id="kk">
+			<div class="display-container">
+				<header class="top-container">
+					<div class="game-title">TRY TO TYPE</div>
+					<div class="display-word">Word</div>
+				</header>
+				<main class="main-container">
+					<div class="keys-container">
+						<div class="row-one">
+							<button type="button" data-key="81" class="key">Q</button>
+							<button type="button" data-key="87" class="key">W</button>
+							<button type="button" data-key="69" class="key">E</button>
+							<button type="button" data-key="82" class="key">R</button>
+							<button type="button" data-key="84" class="key">T</button>
+							<button type="button" data-key="89" class="key">Y</button>
+							<button type="button" data-key="85" class="key">U</button>
+							<button type="button" data-key="73" class="key">I</button>
+							<button type="button" data-key="79" class="key">O</button>
+							<button type="button" data-key="80" class="key">P</button>
+						</div>
+						<div class="row-two">
+							<button type="button" data-key="65" class="key">A</button>
+							<button type="button" data-key="83" class="key">S</button>
+							<button type="button" data-key="68" class="key">D</button>
+							<button type="button" data-key="70" class="key">F</button>
+							<button type="button" data-key="71" class="key">G</button>
+							<button type="button" data-key="72" class="key">H</button>
+							<button type="button" data-key="74" class="key">J</button>
+							<button type="button" data-key="75" class="key">K</button>
+							<button type="button" data-key="76" class="key">L</button>
+						</div>
+						<div class="row-three">
+							<button type="button" data-key="90" class="key">Z</button>
+							<button type="button" data-key="88" class="key">X</button>
+							<button type="button" data-key="67" class="key">C</button>
+							<button type="button" data-key="86" class="key">V</button>
+							<button type="button" data-key="66" class="key">B</button>
+							<button type="button" data-key="78" class="key">N</button>
+							<button type="button" data-key="77" class="key">M</button>
+						</div>
+					</div>
+					<h1 class="timer">Timer</h1>
+				</main>
+				<footer class="footer-container">
+					<input class="input-filed" type="text" autofocus />
+					<button type="button" data-key="13" class="key enter">return</button>
+				</footer>
+			</div>
+
+			<audio data-key="77" src="./sounds/boom.wav"></audio>
+			<audio data-key="78" src="./sounds/clap.wav"></audio>
+			<audio data-key="66" src="./sounds/hihat.wav"></audio>
+			<audio data-key="86" src="./sounds/kick.wav"></audio>
+			<audio data-key="67" src="./sounds/openhat.wav"></audio>
+			<audio data-key="88" src="./sounds/ride.wav"></audio>
+			<audio data-key="90" src="./sounds/snare.wav"></audio>
+			<audio data-key="76" src="./sounds/tink.wav"></audio>
+			<audio data-key="75" src="./sounds/tom.wav"></audio>
+			<audio data-key="74" src="./sounds/boom.wav"></audio>
+			<audio data-key="72" src="./sounds/clap.wav"></audio>
+			<audio data-key="71" src="./sounds/hihat.wav"></audio>
+			<audio data-key="70" src="./sounds/kick.wav"></audio>
+			<audio data-key="68" src="./sounds/openhat.wav"></audio>
+			<audio data-key="83" src="./sounds/ride.wav"></audio>
+			<audio data-key="65" src="./sounds/snare.wav"></audio>
+			<audio data-key="80" src="./sounds/tink.wav"></audio>
+			<audio data-key="79" src="./sounds/tom.wav"></audio>
+			<audio data-key="73" src="./sounds/boom.wav"></audio>
+			<audio data-key="85" src="./sounds/clap.wav"></audio>
+			<audio data-key="89" src="./sounds/hihat.wav"></audio>
+			<audio data-key="84" src="./sounds/kick.wav"></audio>
+			<audio data-key="82" src="./sounds/openhat.wav"></audio>
+			<audio data-key="69" src="./sounds/ride.wav"></audio>
+			<audio data-key="87" src="./sounds/snare.wav"></audio>
+			<audio data-key="81" src="./sounds/tink.wav"></audio>
+			<audio data-key="13" src="./sounds/clap.wav"></audio>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="./script/main.js"></script>
+	</body>
+</html>

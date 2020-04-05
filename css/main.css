@@ -1,0 +1,279 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url('../imgs/typewriter-keys-938165.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#kk {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.display-container {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 200px 1fr 200px;
+}
+/* start_______________ TOP Container */
+.top-container {
+	width: 100%;
+	display: grid;
+	justify-content: center;
+
+	gap: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 20px;
+}
+
+.display-word {
+	color: #d5d1d1;
+	background-color: #171712ed;
+
+	padding: 10px;
+	text-align: center;
+	align-self: end;
+	border-radius: 6px;
+	width: 604px;
+	justify-self: center;
+	letter-spacing: 10px;
+}
+
+.game-title {
+	color: #fffb00;
+	background-color: #171712ed;
+	padding: 30px;
+	text-align: center;
+	align-self: center;
+	width: 1300px;
+	border-radius: 6px;
+	letter-spacing: 10px;
+}
+/* end_______________ TOP Container */
+
+/* start_______________ Main Container */
+.main-container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 70px;
+	padding: 20px;
+}
+.timer {
+	align-self: center;
+}
+
+.keys-container {
+	align-self: center;
+	justify-self: center;
+}
+
+.row-one,
+.row-two,
+.row-three {
+	display: grid;
+	justify-content: center;
+	text-align: center;
+	padding: 5px;
+}
+
+.row-one {
+	grid-template-columns: repeat(10, 1fr);
+	width: 100%;
+}
+.row-two {
+	grid-template-columns: repeat(9, 1fr);
+	width: 90%;
+	margin: 0 auto;
+}
+.row-three {
+	grid-template-columns: repeat(7, 1fr);
+	width: 70%;
+	margin: 0 auto;
+}
+
+.row-one > button,
+.row-two > button,
+.row-three > button {
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	border: 3px solid #000;
+	font-size: 35px;
+	transition: all 0.2s;
+	box-shadow: 0 0 5px #666628;
+	margin: 2px;
+}
+
+.enter {
+	width: 200px;
+	height: 70px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	border: 3px solid #000;
+	font-size: 35px;
+	transition: all 0.2s;
+	box-shadow: 0 0 5px #666628;
+}
+
+.active {
+	transform: scale(1);
+	color: #a3acbb !important;
+	border: 4px solid #666628 !important;
+}
+
+.timer {
+	color: #606026;
+	font-size: 82px;
+	font-family: 'Pacifico', cursive;
+	position: relative;
+	right: 170px;
+}
+
+/* end_______________ Main Container */
+/* start_______________ foooter Container */
+
+.footer-container {
+	text-align: center;
+}
+
+.input-filed {
+	width: 400px;
+	height: 70px;
+	font-size: 40px;
+	margin: 0 90px;
+	background-color: #171717a1;
+	border-radius: 10px;
+	border: 2px solid #404002;
+	color: green;
+	text-align: center;
+}
+
+.correct {
+	border: 3px solid green;
+	transition: all 0.9s;
+}
+.incorrect {
+	border: 3px solid red;
+	transition: all 0.9s;
+}
+/* end_______________ foooter Container */
+/* start_______________ sidebar Container */
+#result-bar {
+	background-color: #1d1d18;
+	height: 100%;
+	position: fixed;
+	z-index: 22;
+	transition: all 0.2;
+	margin-left: 1500px;
+	width: 300px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	display: none;
+}
+
+#score,
+#sec,
+#ave {
+	margin: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.start {
+	background-color: #1d1d18;
+	opacity: 0.5;
+	height: 100%;
+	z-index: 22;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.startGame {
+	width: 500px;
+	height: 50px;
+	border: 4px solid black;
+	background-color: #404002;
+	color: white;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.startGame:hover {
+	transition: all 0.5;
+	background-color: yellow;
+	cursor: pointer;
+	color: black;
+}
+
+.set-timer {
+	width: 500px;
+	height: 50px;
+	border: 4px solid black;
+	color: black;
+	font-size: 30px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+}
+
+.restart-btn {
+	width: 150px;
+	height: 50px;
+	border: 4px solid black;
+	background-color: #404002;
+	color: white;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 20px 0 0 25px;
+}
+
+.intro {
+	position: relative;
+	bottom: 50px;
+	text-align: center;
+	font-family: cursive;
+	font-size: 35px;
+}
+.intro > p {
+	padding: 1px 0;
+}
+
+.btn-githib {
+	text-decoration: none;
+
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	top: 90px;
+	background-color: rgb(197, 218, 9);
+	color: black;
+}
+.btn-githib:hover {
+	transition: all 0.9s;
+	color: white;
+	background-color: black;
+}
+
+/* end_______________ sidebar Container */
