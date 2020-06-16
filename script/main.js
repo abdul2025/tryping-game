@@ -1,7 +1,5 @@
-console.log('running');
-
 // add sound and class
-$('body').keydown(function(e) {
+$('body').keydown(function (e) {
 	/// ill check if any of the audio has the keycode in data-key
 	// console.log(e.keyCode);
 	let audio = document.querySelector('audio[data-key="' + e.keyCode + '"]');
@@ -20,7 +18,7 @@ let keys = document.querySelectorAll('.key');
 function removeTransition() {
 	this.classList.remove('active');
 }
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
 
 let inputElement = document.querySelector('.input-filed');
 let wordElement = document.querySelector('.display-word');
@@ -63,7 +61,7 @@ function ch(e) {
 				'this is software engineering course',
 				'html',
 				'css',
-				'jquery'
+				'jquery',
 			];
 			let l = 0;
 			let inputValue = inputElement.value.toUpperCase();
@@ -98,7 +96,7 @@ let inTimer;
 let timing = 0;
 function startTimer() {
 	timer.textContent = 0;
-	let stop = setInterval(function() {
+	let stop = setInterval(function () {
 		timing++;
 		timer.textContent = timing;
 		if (timing >= parseInt(inTimer)) {
@@ -112,7 +110,7 @@ function startTimer() {
 		}
 	}, 1000);
 }
-startGame.addEventListener('click', function() {
+startGame.addEventListener('click', function () {
 	if (inputTimer.value > 0) {
 		startTimer();
 		startElement.style.display = 'none';
@@ -125,7 +123,7 @@ startGame.addEventListener('click', function() {
 	}
 });
 
-restartBtn.addEventListener('click', function() {
+restartBtn.addEventListener('click', function () {
 	timing = 0;
 	sideBar.style.display = 'none';
 	spanScores.textContent = '';
@@ -138,7 +136,7 @@ restartBtn.addEventListener('click', function() {
 	// console.log(timing);
 });
 
-let init = function() {
+let init = function () {
 	inputElement.value = '';
 	inputTimer.value = 'set your timer in seconds';
 	inputTimer.focus();

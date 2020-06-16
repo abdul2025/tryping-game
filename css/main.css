@@ -17,6 +17,10 @@ body {
 	background-size: cover;
 }
 
+h6 {
+	color: red;
+}
+
 #kk {
 	width: 100%;
 	height: 100%;
