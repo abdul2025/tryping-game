@@ -12,3 +12,8 @@
 - Player must write the word and sentence correctly to move to next word/se
 - There is a timer ticking on
 - Final scores show with Avarage word typed per .sec
+
+
+### link to the project
+---
+[Page](https://abdul2025.github.io/tryping-game/).
